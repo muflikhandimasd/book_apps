@@ -103,55 +103,6 @@ class _HomePageState extends State<HomePage> {
       );
     }
 
-    // GridView buildGridView() {
-    //   return GridView.count(
-    //     crossAxisCount: 2,
-    //     shrinkWrap: true,
-    //     physics: NeverScrollableScrollPhysics(),
-    //     children: List.generate(listBook.length, (index) {
-    //       var book = listBook[index];
-    //       return Card(
-    //         color: Colors.white,
-    //         child: Column(
-    //           children: [
-    //             Expanded(
-    //               child: Padding(
-    //                 padding:
-    //                     const EdgeInsets.only(left: 50, right: 50, top: 10),
-    //                 child: Image.asset(
-    //                   book.imageAsset,
-    //                   width: MediaQuery.of(context).size.width,
-    //                   fit: BoxFit.fill,
-    //                 ),
-    //               ),
-    //             ),
-    //             Padding(
-    //               padding: const EdgeInsets.all(10),
-    //               child: Column(
-    //                 children: [
-    //                   Text(
-    //                     book.name,
-    //                     textAlign: TextAlign.center,
-    //                     style: const TextStyle(
-    //                       fontSize: 16,
-    //                       fontWeight: FontWeight.bold,
-    //                     ),
-    //                   ),
-    //                 ],
-    //               ),
-    //             ),
-    //             Text(
-    //               book.categoryBook,
-    //               textAlign: TextAlign.center,
-    //               style: const TextStyle(fontSize: 17),
-    //             ),
-    //           ],
-    //         ),
-    //       );
-    //     }),
-    //   );
-    // }
-
     GridView buildGridView() {
       return GridView.count(
         crossAxisCount: 2,

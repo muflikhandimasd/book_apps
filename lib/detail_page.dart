@@ -32,10 +32,13 @@ class Detailpage extends StatelessWidget {
               // Image
               width: double.infinity,
               height: MediaQuery.of(context).size.height / 3,
-              decoration: const BoxDecoration(
+              decoration: BoxDecoration(
                 image: DecorationImage(
-                    image: AssetImage('images/buku-docker.png'),
-                    fit: BoxFit.cover),
+                  image: AssetImage(
+                    book.imageAsset,
+                  ),
+                  fit: BoxFit.cover,
+                ),
               ),
               child: BackdropFilter(
                 filter: ImageFilter.blur(sigmaX: 2.0, sigmaY: 2.0),
